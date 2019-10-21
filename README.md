@@ -94,7 +94,7 @@ poster::clear();
 ```
 
 #### 生成二维码
-
+```
 include './inc/phpQrcode.class.php';//由phpQrcode改造，新增返回数据流方法
 
 //二维码生成内容
@@ -105,6 +105,7 @@ $qrCodeData = QRcode::pngData($code, 13);
 
 //方法二：生成指定路径图片
 QRcode::png($code, './img/qrcode.png',QR_ECLEVEL_L,3,13);
+```
 
 #### 默认配置参数
 
